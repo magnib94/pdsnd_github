@@ -8,3 +8,14 @@
 
 ### Gives data analysts insite about the data collected from the user' database. the python program calculate daily, weekly and monthly statistics relating to the cities involed.
 
+### >bikeshare.py
+
+    >Chicago.csv
+
+    >New york city.csv
+
+    >Washington.csv
+
+    >.gitignore
+
+# The project Repo has 2 branches: master and documentation
