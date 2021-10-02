@@ -83,16 +83,18 @@ def get_filters():
             data_display = input('Would you like to show the first 5 rows of the data-> Yes or NO \n').lower()
             if(datadisplay == 'yes'):
                 for row in reader:
+
     #                 print('start')
+
                     if month in row[1]:
                         if line_count <=+ 5:
                             line_count = line_count+1
                             print(row)
                 line_count = 0
 
-          #If the string you want to search is in the row
+#             If the string you want to search is in the row
 #             print("String found in first row of csv")
-#         break
+#             break
 
     x = ''
     for item in days:
@@ -106,16 +108,7 @@ def get_filters():
         day = input("\nInvalid selection. " +
                     "Please enter one of the following options to filter by day." +
                     "\n(All, {})\n".format(x)).lower()
- 
-#     month_num = datetime.datetime.strptime(month, '%B').month
-#     if month_num <10:
-        
-#         month_num= str( month_num)
-#         month = '-0'+month_num+'-'
-#     else:
-#         month_num= str( month_num)
-#         month = '-'+month_num+'-'
-#     newMonth=[]    
+     
     with open(newcity, 'r') as file:
             reader = csv.reader(file)
             line_count = 0
@@ -123,7 +116,9 @@ def get_filters():
             newcity= city+'.csv'
             if(datadisplay == 'yes'):
                 for row in reader:
-    #                 print('start')
+
+ #                 print('start')
+ 
                     if month in row[1]:
                             li=list(row[1].split(" "))
                             li=li[0]
